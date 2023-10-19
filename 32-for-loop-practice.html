@@ -26,7 +26,7 @@
         console.log(productListEl)
 
         function calculatePrice(){
-           const rate = Number(rateEl.value);
+           const rate = Number(rateEl.value); //convert string value to number
 
            for(let i = 0; i<productListEl.length; i++){
                 const elPrice = productListEl[i].querySelector("span");

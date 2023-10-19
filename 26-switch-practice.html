@@ -16,31 +16,28 @@
         const resultEl = document.querySelector("#result");
 
         function setPrice(){
-            let price =  Number(txtPrice.value);
+            let price = Number (txtPrice.value);
             let discount;
-switch(true){
-    case price>1500: 
-    discount = 15;
-    break;
 
-    case price>700: 
-    discount = 13;
-    break;
-    
-    case price>500: 
-    discount = 10;
-    break;
+            switch (true){
+                case price >1500:
+                    discount = 15;
+                    break;
+                case price >700:
+                    discount =13;
+                    break;
+                case price >500:
+                    discount =10;
+                    break;
+                case price >300:
+                    discount =5;
+                    break;
+                default:
+                    discount = 2;
 
-    case price>300: 
-    discount = 5;
-    break;
-
-    default: 
-    discount = 2;
-
-}
-price = price - price*discount/100;
-            resultEl.innerHTML = `Price is: ${price}`
+            }
+            price =  price - price*discount /100;
+            resultEl.innerHTML = `Discounted price : ${price}`
         }
 
     </script>

@@ -15,11 +15,17 @@
         let x = 5; 
 
         const funct1 = ()=>{
-
+            
             let functionScopeVariable = 11;
             console.log(globalScopeVariable + functionScopeVariable)
 
             let x = 10; // x is new varialbe in function scope
+
+
+            if(true){
+                const c = "hello"
+            }
+
         } //ends function scope
        // console.log(functionScopeVariable) --> we cannot reach out function variables from outside of function
        console.log("x: ", x)
@@ -32,7 +38,7 @@
         
 
         if(globalScopeVariable > 20){
-            let blockSopeVariable = 30;
+            var blockSopeVariable = 30;
         }
         console.log(blockSopeVariable)
         
