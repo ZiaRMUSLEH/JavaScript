@@ -38,8 +38,9 @@
 
         //method-5
 
-        document.querySelector("#bntHello").addEventListener("click",  ()=>{
+        document.querySelector("#bntHello").addEventListener("click",  (e)=>{
             console.log("hello 6")
+            console.log(e.target.innerText)
         })
     </script>
 </body>
