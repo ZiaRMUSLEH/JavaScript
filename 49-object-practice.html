@@ -41,7 +41,7 @@
         const lblCarValue = document.querySelector("#lblCarValue");
 
         const fillSelectOption = ()=>{
-            const carKeys = Object.keys(car);
+            const carKeys = Object.keys(car); //keys of obj in array
             console.log(carKeys)
             for(let i=0; i<carKeys.length; i++){
                 ddlCar.innerHTML += `<option >${carKeys[i]}</option>`
@@ -57,6 +57,7 @@
            lblCarValue.innerHTML = car[carKey];
         })
 
+        
     </script>
 </body>
 </html>
